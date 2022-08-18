@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <section class="home">
+            <header>
+                <a href="#" class="logo">Sports</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </header>
+              <div class="content">
+                <div class="textBox">
+                    <h2>That's <br><span>I like</span></h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quos. Non, excepturi! Quisquam deserunt, aliquid animi perferendis, exercitationem iste, sapiente quis ratione laborum sed illo laboriosam doloribus blanditiis in porro!
+                    </p>
+                    <a href="#">View All Products</a>
+                </div>
+                <div class="imgBox">
+                    <img src="./img/ronaldo.jpg" alt="" class="sports">
+                </div>
+              </div>
+              <ul class="thumb">
+               
+                <li><img src="./img/neymar.jpg" onclick="imgSlider('./img/neymar.jpg')" ></li>
+                <li><img src="./img/mbappe.jpg" onclick="imgSlider('./img/mbappe.jpg')"  ></li>
+                <li><img src="./img/messi.jpg" onclick="imgSlider('./img/messi.jpg')"  ></li>
+              </ul>
+        </section>
+    </body>
+</html>
+<script>
+    function imgslider(someTHing){
+        document.querySelector('.sports').src =someTHing;
+    }
+</script>
